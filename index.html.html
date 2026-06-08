@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayan's Grade 9 English Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, h4, .font-display { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; }
+        .story-text { font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.7; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col selection:bg-indigo-500 selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-md shadow-indigo-100">R</div>
+                <div>
+                    <h1 class="text-lg font-bold tracking-tight text-slate-900">Rayan's Portfolio</h1>
+                    <p class="text-xs text-indigo-600 font-medium">Grade 9 English • Ms. Rodas</p>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-1">
+                <button onclick="showPage('home')" class="nav-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 text-indigo-600 bg-indigo-50" id="btn-home">Home</button>
+                <button onclick="showPage('evidence1')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-slate-100 transition-all duration-200" id="btn-evidence1">Evidence 1</button>
+                <button onclick="showPage('evidence2')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-slate-100 transition-all duration-200" id="btn-evidence2">Evidence 2</button>
+                <button onclick="showPage('evidence3')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-slate-100 transition-all duration-200" id="btn-evidence3">Evidence 3</button>
+                <button onclick="showPage('skills')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-slate-100 transition-all duration-200" id="btn-skills">Transferable Skills</button>
+                <button onclick="showPage('reflection')" class="nav-btn px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-indigo-600 hover:bg-slate-100 transition-all duration-200" id="btn-reflection">Growth Reflection</button>
+            </nav>
+
+            <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-4 py-3 space-y-1">
+            <button onclick="showPage('home'); toggleMobileMenu()" class="block w-full text-left px-4 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50">Home</button>
+            <button onclick="showPage('evidence1'); toggleMobileMenu()" class="block w-full text-left px-4 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50">Evidence 1: Pixel Dash</button>
+            <button onclick="showPage('evidence2'); toggleMobileMenu()" class="block w-full text-left px-4 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50">Evidence 2: Lighthouse</button>
+            <button onclick="showPage('evidence3'); toggleMobileMenu()" class="block w-full text-left px-4 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50">Evidence 3: THUG Essay</button>
+            <button onclick="showPage('skills'); toggleMobileMenu()" class="block w-full text-left px-4 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50">Transferable Skills</button>
+            <button onclick="showPage('reflection'); toggleMobileMenu()" class="block w-full text-left px-4 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-50">Growth Reflection</button>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-6xl w-full mx-auto px-4 sm:px-6 py-8">
+
+        <div id="page-home" class="page-content space-y-12">
+            <div class="relative overflow-hidden bg-gradient-to-br from-indigo-900 via-indigo-800 to-slate-900 rounded-3xl text-white px-6 py-12 sm:p-16 shadow-xl">
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(99,102,241,0.2),transparent_45%)]"></div>
+                <div class="relative z-10 max-w-3xl space-y-6">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/30 text-indigo-200 border border-indigo-400/20">
+                        <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse"></span>
+                        ENG1W • FINAL EVALUATION PORTFOLIO
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-none">
+                        Rayan's English <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-indigo-100">Learning Portfolio</span>
+                    </h1>
+                    <p class="text-lg text-indigo-100 max-w-2xl font-light leading-relaxed">
+                        Welcome to my final portfolio website for Grade 9 English with Ms. Rodas. This site contains my three best pieces of evidence from this semester, highlighting my transferable skills and development.
+                    </p>
+                    <div class="pt-2 flex flex-wrap gap-4">
+                        <button onclick="showPage('reflection')" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl shadow-lg shadow-indigo-900/30 transition-all">Read Reflection</button>
+                        <button onclick="showPage('skills')" class="px-6 py-3 bg-white/10 hover:bg-white/15 text-white font-semibold rounded-xl border border-white/15 transition-all">Transferable Skills</button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-bold text-slate-900 mb-6">Course Portfolio Evidence</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-2xl border border-slate-200 p-6 flex flex-col justify-between hover:shadow-lg transition-all">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center text-pink-600"><i data-lucide="gamepad-2" class="w-6 h-6"></i></div>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-pink-500">Evidence #1: Dynamic Forms</span>
+                            <h3 class="text-xl font-bold text-slate-900">Pixel Dash Arena Guide</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed">Companion instruction manual detailing gameplay elements, structural layout formatting, and design targeted toward specific audiences.</p>
+                        </div>
+                        <button onclick="showPage('evidence1')" class="mt-6 w-full py-2.5 bg-slate-100 hover:bg-indigo-600 hover:text-white text-slate-700 font-semibold rounded-xl text-sm transition-all flex items-center justify-center gap-2">View Work <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+                    </div>
+                    <div class="bg-white rounded-2xl border border-slate-200 p-6 flex flex-col justify-between hover:shadow-lg transition-all">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600"><i data-lucide="feather" class="w-6 h-6"></i></div>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-blue-500">Evidence #2: Creative Expression</span>
+                            <h3 class="text-xl font-bold text-slate-900">The Lighthouse Keeper</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed">An original short suspense story tracking a character named Jonathan Reeves through a dangerous storm, scoring an 83% (Level 4-).</p>
+                        </div>
+                        <button onclick="showPage('evidence2')" class="mt-6 w-full py-2.5 bg-slate-100 hover:bg-indigo-600 hover:text-white text-slate-700 font-semibold rounded-xl text-sm transition-all flex items-center justify-center gap-2">View Work <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+                    </div>
+                    <div class="bg-white rounded-2xl border border-slate-200 p-6 flex flex-col justify-between hover:shadow-lg transition-all">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600"><i data-lucide="book-open" class="w-6 h-6"></i></div>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-emerald-500">Evidence #3: Textual Analysis</span>
+                            <h3 class="text-xl font-bold text-slate-900">The Hate U Give Essay</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed">Formal analytical essay covering code-switching, structural dualism, identity stress, and personal perspective shifts.</p>
+                        </div>
+                        <button onclick="showPage('evidence3')" class="mt-6 w-full py-2.5 bg-slate-100 hover:bg-indigo-600 hover:text-white text-slate-700 font-semibold rounded-xl text-sm transition-all flex items-center justify-center gap-2">View Work <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-indigo-900/5 rounded-2xl p-6 sm:p-8 border border-indigo-100">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left divide-y md:divide-y-0 md:divide-x divide-indigo-100">
+                    <div class="pb-6 md:pb-0 md:pr-6">
+                        <h4 class="text-lg font-bold text-slate-900">Paragraph Structure</h4>
+                        <p class="text-sm text-slate-500 mt-1">Transitioned from basic text responses to structured P.E.E. paragraphs using targeted data parameters.</p>
+                    </div>
+                    <div class="py-6 md:py-0 md:px-6">
+                        <h4 class="text-lg font-bold text-slate-900">Narrative Style</h4>
+                        <p class="text-sm text-slate-500 mt-1">Mastered "Show, Don't Tell" methodologies to scale structural plot tension and engage readers effectively.</p>
+                    </div>
+                    <div class="pt-6 md:pt-0 md:pl-6">
+                        <h4 class="text-lg font-bold text-slate-900">Self-Regulation Goal</h4>
+                        <p class="text-sm text-slate-500 mt-1">Allocating dedicated tracking windows for formatting adjustments and system spell-checks in Grade 10.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page-evidence1" class="page-content hidden space-y-8">
+            <div class="border-b border-slate-200 pb-5">
+                <span class="text-sm font-semibold uppercase text-pink-500 tracking-wider">Evidence #1</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-1">🎮 Pixel Dash Arena Game Guide</h2>
+                <p class="text-slate-500 mt-1">Analyzing structural formats and audience targeting parameters.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 space-y-6">
+                    <div class="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
+                        <div class="bg-slate-100 px-6 py-4 border-b border-slate-200 flex justify-between items-center">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">Manual Layout</span>
+                            <span class="px-2 py-1 bg-pink-100 text-pink-700 rounded text-xs font-semibold">Unit 1 Summative</span>
+                        </div>
+                        <div class="p-6 sm:p-8 space-y-6 text-slate-700 text-sm sm:text-base leading-relaxed">
+                            <div class="text-center pb-4 border-b border-slate-100">
+                                <h3 class="text-2xl font-bold text-slate-900">Companion Text: Pixel Dash Arena</h3>
+                                <p class="text-slate-500 text-sm mt-1">Author: Rayan • Grade 9 English</p>
+                            </div>
+                            <div class="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-xl">
+                                <h4 class="font-bold text-indigo-900 text-sm uppercase">Purpose</h4>
+                                <p class="text-indigo-950 mt-1 text-sm">This manual maps interface parameters for Pixel Dash Arena, minimizing onboarding friction by isolating movement coordinates and win states for real-time play adaptation.</p>
+                            </div>
+                            <div class="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-xl">
+                                <h4 class="font-bold text-indigo-900 text-sm uppercase">Audience</h4>
+                                <p class="text-indigo-950 mt-1 text-sm">Targeted at users aged 6 to 14. The system presents low input barriers for entry-level interactions while scaling mechanical threats continuously to sustain retention for legacy users.</p>
+                            </div>
+                            <div class="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-xl">
+                                <h4 class="font-bold text-indigo-900 text-sm uppercase">Form</h4>
+                                <p class="text-indigo-950 mt-1 text-sm">Structured instruction set utilizing bold typography, isolated alerts, and high-visibility bullet strings matching structural standard documentation schemas.</p>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-lg font-bold text-slate-900">System Mechanics</h4>
+                                <ol class="list-decimal pl-5 space-y-2">
+                                    <li>Launch system inside browser client. Click <strong>ENGAGE</strong> to initialize runtime environments.</li>
+                                    <li>Character tracks to structural grid center initialized with exactly 5 life values.</li>
+                                </ol>
+                                <p class="font-semibold mt-4">Control Matrix:</p>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li><strong>W</strong> – Vector Upward</li>
+                                    <li><strong>A</strong> – Vector Leftward</li>
+                                    <li><strong>S</strong> – Vector Downward</li>
+                                    <li><strong>D</strong> – Vector Rightward</li>
+                                </ul>
+                                <p class="italic text-slate-500 text-xs">Note: Asset translation contains momentum coefficients, producing drift effects that require predictive tracking offsets.</p>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-lg font-bold text-slate-900">Dash Subroutines</h4>
+                                <p>Activating <strong>SHIFT</strong> forces instantaneous velocity changes, granting invulnerability properties for fixed frame counts. Dashing costs fixed metrics from the rechargeable stamina container visible on the interface.</p>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-lg font-bold text-slate-900">Threat Matrix (Enemies)</h4>
+                                <p>Red indicators declare structural hazards. Threats generate in procedural wave cycles, lock onto core target positions, and execute tracking lines across coordinate vectors.</p>
+                                <div class="bg-red-50 p-3 rounded-xl border border-red-100 text-xs text-red-800">
+                                    <strong>Collision Impact:</strong> Striking an asset triggers a 2-life point subtraction and applies standard tracking knockback routines.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm space-y-4">
+                        <h4 class="text-lg font-bold text-slate-900 flex items-center gap-2"><i data-lucide="brain" class="text-pink-500"></i>Student Reflection</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">This asset outlines structural alignment techniques by forcing a transition from simple content use to critical layout design. I organized technical instructions to serve explicit functional needs, using concise spacing structures so end users could retrieve interface operational parameters instantaneously.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page-evidence2" class="page-content hidden space-y-8">
+            <div class="border-b border-slate-200 pb-5">
+                <span class="text-sm font-semibold uppercase text-blue-500 tracking-wider">Evidence #2</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-1">🪶 The Lighthouse Keeper</h2>
+                <p class="text-slate-500 mt-1">Creative narrative text incorporating structural tension and tracking arcs.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 space-y-6">
+                    <div class="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
+                        <div class="bg-slate-100 px-6 py-4 border-b border-slate-200 flex justify-between items-center">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">Narrative Asset</span>
+                            <span class="px-2.5 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold">Grade: 83% (Level 4-)</span>
+                        </div>
+                        <div class="p-6 sm:p-8 space-y-6 text-slate-700 text-sm sm:text-base story-text">
+                            <p>Friday, August 13, 1999, a massive wind blasted across Stormy Bay, shaking houses as if they were made of paper. Huge waves crashed into rocks continuously, spraying water high into the air. Up on the mountain, the old lighthouse stood tall. It had been built in 1845, with old bricks and cracks running along the walls, and a lot of spiderwebs as if Spider-Man lived there. The wind howled around it, and the sea below roared like a dinosaur. Jonathan Reeves, its owner, had taken care of that lighthouse for many years, even though people said it was filthy and looked stupid, to him, it meant everything.</p>
+                            <p>Jonathan was sitting in his cabin chilling, watching some Netflix when suddenly his phone buzzed loudly in his hand.</p>
+                            <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-center font-mono text-xs tracking-wide text-slate-800">"SEVERE STORM INCOMING, HEAVY RAIN AND HUGE WAVES. STAY INDOORS."</div>
+                            <p>He looked out the window right away. Outside, the sky had turned pitch black because of the dark clouds rolling in. The trees were screaming for dear life as massive wind came through them. Something felt off. Then his eyes moved to the lighthouse.</p>
+                            <p class="font-medium text-slate-900">The light flickered.</p>
+                            <p>It blinked once, then again, weaker each time. His stomach dropped. “No, no, not now!” his thoughts yelled at him.</p>
+                            <p>He had to get straight to the plan quickly. He rushed outside, pulling his jacket tighter as the wind hit him. Rain started falling fast, soaking the ground and turning the dirt path into mud. He made his way to the shed, but as soon as he got there, he stopped dead.</p>
+                            <p class="font-semibold text-slate-900">A huge tree had fallen straight through it.</p>
+                            <p>The wood was crushed, and pieces were scattered everywhere. The door hung loose, swinging slowly back and forth. For a moment, Jonathan just stood there, staring at the mess. Without fuel, the lighthouse would go dark. Without the light, ships would crash into the cliffs.</p>
+                            <p>“THINK,” he said quietly.</p>
+                            <p>Then he remembered the emergency gas can inside his cabin. He turned and ran back, nearly slipping as water spread across the floor. He searched quickly, moving things aside until he finally found it hidden in the back of his closet. He grabbed it and didn't waste another second. He ran back downstairs, putting on his waterproof boots and gloves. He tied a rope around his waist for safety because God knows what is going to happen next. The storm outside had gotten worse.</p>
+                            <p>The second he stepped out, the wind pushed against him hard. Rain hit his face, cold and sharp. The path to the lighthouse was narrow, and now it was slippery too. Each step felt dangerous, but he kept moving forward because he wouldn’t give up.</p>
+                            <p>“I will get these sailors safe in no time. I’m gonna make this right,” he said.</p>
+                            <p>The lighthouse flickered again in the distance, its light dim but still there. It felt like it was holding on, waiting for him. Jonathan tightened his grip on the gas can and kept going.</p>
+                            <p>When he reached the wooden bridge, a strong gust of wind punched him from the side. The gas can slipped from his hands and hit the ground, nearly falling at the edge. “NOOOOOOO!!!” he shouted.</p>
+                            <p>It slid toward the edge. Jonathan dropped to his knees and reached out just in time to grab it before it fell. His heart was punching his chest like a boxer landing blows. “NOT TODAY,” he said, pulling it close.</p>
+                            <p>He slowly stood back up and crossed the bridge, more careful this time. By the time he reached the lighthouse, he was soaked and freezing, but he didn’t stop.</p>
+                            <p>He went inside, seeing the light was barely glowing and now he could hear the sailors' distant bells. Shadows moved across the walls as it flickered.</p>
+                            <p>He rushed up the spiral stairs, holding onto the railing as his legs burned. At the top, he quickly poured the fuel into the tank. His hands were shaking from the cold and the pressure. “POUR FASTER! COME ON,” he muttered.</p>
+                            <p>He lit it. For a moment, nothing happened. The storm outside continued to crash against the lighthouse. Then suddenly, the light came back.</p>
+                            <p class="font-bold text-indigo-600 text-lg">A bright beam shot out into the darkness, slicing it like a sword and reaching far across the ocean.</p>
+                            <p>Jonathan dropped to the floor, breathing heavily, letting the moment sink in. By morning, the storm had passed. The sky was clear, and the sunlight spread across the water. The town below was damaged, but the people were outside, safe.</p>
+                            <p>Then they slowly made their way up to the lighthouse. “You saved us, Jonathan!!” one of them yelled.</p>
+                            <p>Jonathan didn’t say much due to exhaustion. He just nodded and looked at the calm ocean. The lighthouse stood tall behind him, steady and strong. The townspeople offered to rebuild Jonathan’s shed as well. The lighthouse wasn’t just a building. It was hope. And somehow, so was he.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-indigo-900 text-white rounded-2xl p-6 shadow-sm">
+                        <h4 class="text-base font-bold uppercase text-indigo-300 mb-3">Evaluator Notes (83%)</h4>
+                        <div class="text-sm space-y-2 text-indigo-100">
+                            <p><strong>Success Vectors:</strong> Solid plot pacing; obstacle variations (crushed shelter, resource drop) build tension. Character persistence is well-developed.</p>
+                            <p><strong>Target Fixes:</strong> Minor spelling discrepancies, structural line spacing flaws, and dialog emphasis constraints.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                        <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2"><i data-lucide="brain" class="text-blue-500"></i>Reflection Matrix</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">This text demonstrates communication and imaginative composition skills. By applying stylistic descriptive tracking ("heart punching his chest like a boxer"), I replaced static declarations with dynamic active states, generating real narrative tension.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page-evidence3" class="page-content hidden space-y-8">
+            <div class="border-b border-slate-200 pb-5">
+                <span class="text-sm font-semibold uppercase text-emerald-500 tracking-wider">Evidence #3</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-1">📖 Textual Dualism in The Hate U Give</h2>
+                <p class="text-slate-500 mt-1">Analytical text parsing identity stress and code-switching parameters.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 space-y-6">
+                    <div class="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
+                        <div class="bg-slate-100 px-6 py-4 border-b border-slate-200 flex justify-between items-center">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest">Analytical Essay</span>
+                            <span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded text-xs font-semibold">Unit 4 Summative</span>
+                        </div>
+                        <div class="p-6 sm:p-8 space-y-6 text-slate-700 text-sm sm:text-base leading-relaxed">
+                            <div class="text-center pb-4 border-b border-slate-100">
+                                <h3 class="text-2xl font-bold text-slate-900">Staying True To Yourself in The Hate U Give</h3>
+                                <p class="text-slate-500 text-sm mt-1">By Rayan • May 29, 2026</p>
+                            </div>
+                            <p>A lot of people change the way they talk or act around different groups because they’re scared of being judged or left out. Blending in feels easier, but hiding who you really are builds stress and slowly tears down your confidence. In <em>The Hate U Give</em>, Angie Thomas shows this struggle through Starr Carter, a teenager who constantly switches up her personality depending on where she is and who she’s with. She lives in Garden Heights, a mostly Black neighborhood, but goes to Williamson Prep, a wealthy and mostly white school, so she feels like she has to split herself in two. After she witnesses a police officer kill her childhood friend Khalil, that double life becomes harder to maintain, and she starts to understand the cost of staying silent. The novel shows that staying true to yourself matters more than fitting in because pretending to be someone else wears you down, speaking the truth builds real courage, and accepting where you come from is the only way to gain confidence that lasts.</p>
+                            <p>Trying too hard to fit in eventually forces you to act like two different people, and keeping that up is exhausting. Starr feels like she has to switch her entire personality depending on whether she’s in Garden Heights or at Williamson. At school, she avoids slang, watches her tone, and hides anything that might make her seem “too Black” to her classmates. As she explains, “I taught myself to speak with two different people and only say certain things around certain people” (Thomas 300). She isn’t just adjusting her behavior a little, she's cutting off real parts of herself just to feel safe. Instead of helping her fit in, this makes her feel more alone because she’s constantly monitoring everything she says and does. She ends up living two half-lives instead of one whole one. Thomas uses Starr’s struggle to show how draining it is to pretend to be someone you’re not. It doesn’t make life easier; it just makes you feel disconnected from yourself.</p>
+                            <p>The pressure of switching between two identities also builds up over time. Starr wants to fit in at Williamson, but she also wants to stay true to her home and her community. The more she tries to keep those worlds separate, the more stressed she becomes. She’s always worried about slipping up—using the wrong word, reacting too strongly, or revealing something about her life that her classmates won’t understand. This constant self-editing shows how harmful it is when you feel like you can’t be your full self anywhere. Thomas makes it clear that pretending to be someone else might help you avoid judgment for a moment, but it eventually leaves you feeling lost.</p>
+                            <p>Being honest about who you are is also what gives you real courage. After Starr watches Khalil get killed, she’s terrified to speak up. She’s scared of the media twisting her words, worried about gang retaliation, and nervous about how her school friends will react if they find out she was the witness. Staying quiet feels safer, so she hides behind her Williamson persona and tries to act like nothing happened. But eventually she realizes that silence isn’t helping anyone. She admits, “My silence isn’t helping Us” (Thomas 171). This is a turning point for her. She understands that by staying quiet, she’s letting other people control the story and letting Khalil be remembered as a stereotype instead of a real person. Once she decides to speak to the grand jury and the media, her fear starts to shift into purpose. Thomas shows that courage doesn’t appear out of nowhere—it grows when you stop hiding and choose to stand up for what’s right.</p>
+                            <p>Starr’s bravery comes from honesty, not from trying to blend in. When she finally speaks out, she becomes stronger because she’s no longer carrying the weight of pretending. She realizes that her voice matters, and that telling the truth is more important than keeping other people comfortable. Thomas uses Starr’s growth to show that courage is built through action, especially when you decide to be yourself even when it’s risky.</p>
+                            <p>Accepting where you come from is also the only real way to build confidence. At the beginning of the book, Starr treats her background like something she needs to hide, especially around her white friends like Hailey, who often makes racist comments without thinking. Starr worries that if people at Williamson know too much about Garden Heights, they’ll judge her. But as the story goes on, she starts to see her neighborhood differently. Garden Heights isn’t something to be embarrassed about—it’s a community full of love, strength, and history. It’s where she learned her values and where the people she loves most live.</p>
+                            <p>By the end of the novel, Starr understands that her identity is something to claim, not hide. During the protests, she stands on top of a car and shouts, “Khalil, I’ll never forget, I’ll never give up, I’ll never be quiet. I promise” (Thomas 444). This moment shows how far she’s come. She’s no longer shrinking herself to fit in at school. She’s speaking loudly, proudly, and without apology. Thomas uses this scene to show that real confidence comes from accepting your roots and believing that who you are is enough.</p>
+                            <p>Overall, <em>The Hate U Give</em> shows that trying to fit into a space that was never meant for you will only make you miserable. Starr’s journey proves that living a double life brings stress and confusion, while being honest with yourself is what actually makes you brave. By the end of the novel, Starr isn’t a completely different person—she’s just finally her whole self. She doesn’t feel forced to choose between Williamson Starr and Garden Heights Starr anymore because she realizes both sides are real and both belong to her. The biggest lesson Thomas gives is that you shouldn’t change who you are just to make other people comfortable. In a world that constantly tries to tell you who to be, staying true to yourself is one of the strongest choices you can make, because at the end of the day, the person you have to live with is you.</p>
+                            <div class="border-t border-slate-200 pt-4 text-xs text-slate-500">
+                                <p class="font-bold">Works Cited</p>
+                                <p class="mt-1">Thomas, Angie. <em>The Hate U Give</em>. Balzer + Bray, 2017.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+                        <h4 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2"><i data-lucide="trending-up" class="text-emerald-500"></i>Structural Growth</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">This composition models strict paragraph construction and text integration. By enforcing Point-Evidence-Explanation (P.E.E.) formats, I organized my arguments cleanly, embedding source quotes smoothly and parsing exactly how environmental expectations alter identity parameters.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page-skills" class="page-content hidden space-y-8">
+            <div class="border-b border-slate-200 pb-5">
+                <span class="text-sm font-semibold uppercase text-indigo-600 tracking-wider">Matrix</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-1">🛠️ Cross-Curricular Transfer Skills</h2>
+                <p class="text-slate-500 mt-1">Mapping communication and critical thinking skills across high school frameworks.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center text-pink-600 mb-4"><i data-lucide="brain-circuit" class="w-6 h-6"></i></div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Critical Analysis</h3>
+                    <p class="text-sm text-slate-600">Developed through system breakdown tasks in Unit 1. Isolating component metrics transfers directly to <strong>Mathematics</strong>, allowing me to dissect compound word problems into actionable steps rather than trying to solve them all at once.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4"><i data-lucide="sparkles" class="w-6 h-6"></i></div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Imaginative Ideation</h3>
+                    <p class="text-sm text-slate-600">Developed during the narrative creation tasks in Unit 2. Building story obstacles directly assists me in <strong>Business and Technology design blocks</strong>, helping me generate fresh concepts and unique presentation layouts that keep people engaged.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600 mb-4"><i data-lucide="message-square-code" class="w-6 h-6"></i></div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Structural Communication</h3>
+                    <p class="text-sm text-slate-600">Developed writing formal arguments in Unit 4. This structural style directly impacts my **Science lab work**, where I explain data outcomes accurately and format clear procedural steps for labs.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="page-reflection" class="page-content hidden max-w-3xl mx-auto space-y-8">
+            <div class="text-center pb-5 border-b border-slate-200">
+                <span class="text-sm font-semibold uppercase text-indigo-600 tracking-wider">Metacognition Matrix</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-1">🌱 Growth Over Time</h2>
+                <p class="text-slate-500 mt-1">Reviewing my learning process this term and outlining steps for Grade 10.</p>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm space-y-6 text-slate-700 text-base leading-relaxed">
+                <p>Looking back at the start of Grade 9 English, I can see a massive difference in how I approach my writing. Entering high school required major adjustments, and early on, I tried to finish assignments as quickly as possible. My initial writing, like the early drafts of my short story, focused purely on putting thoughts down fast without worrying about formatting or layout mechanics. I used distracting habits, like capitalizing random words or adding too many extra descriptions.</p>
+                <p>My biggest area of growth this semester has been in **Writing Structure and Paragraph Organization**. Working through the summatives taught me that writing is a gradual process. Learning the P.E.E. (Point, Evidence, Explanation) framework during our study of <em>The Hate U Give</em> changed how I build arguments. Instead of writing huge, unorganized blocks of text, I can now separate my ideas cleanly, choose targeted quotes, and explain exactly how they connect to my core argument.</p>
+                <p>My goals for Grade 10 focus on tracking my time better. While my structural organization improved, I still struggle with rushing through final edits. I often finish typing and hit submit immediately without checking minor details. Next year, I plan to start assignments earlier to give myself a dedicated window just for proofreading. Polishing these minor editing issues will make my written communication much sharper and cleaner moving forward.</p>
+                
+                <div class="pt-6 border-t border-slate-100 flex items-center justify-between">
+                    <div>
+                        <p class="text-xs font-bold text-slate-400 uppercase">Submission</p>
+                        <p class="text-sm font-semibold text-slate-800 mt-0.5">June 8, 2026</p>
+                    </div>
+                    <div class="flex items-center gap-1 text-xs text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-100 font-semibold">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Grade 10 Strategy Active
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-400 mt-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <p>© 2026 Rayan • Grade 9 English Portfolio • Ms. Rodas</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page-content');
+            pages.forEach(page => page.classList.add('hidden'));
+
+            const targetPage = document.getElementById('page-' + pageId);
+            if (targetPage) {
+                targetPage.classList.remove('hidden');
+            }
+
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('text-indigo-600', 'bg-indigo-50', 'font-semibold');
+                btn.classList.add('text-slate-600', 'font-medium', 'hover:text-indigo-600', 'hover:bg-slate-100');
+            });
+
+            const activeBtn = document.getElementById('btn-' + pageId);
+            if (activeBtn) {
+                activeBtn.classList.remove('text-slate-600', 'font-medium', 'hover:text-indigo-600', 'hover:bg-slate-100');
+                activeBtn.classList.add('text-indigo-600', 'bg-indigo-50', 'font-semibold');
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
